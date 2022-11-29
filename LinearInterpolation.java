@@ -13,7 +13,7 @@ import java.util.List;
  * @author braeckle
  *
  */
-public class LinearInterpolation implements InterpolationMethod {
+public class LinearInterpolation implements InterpolationMethod { //FERTIG
 
     /** Die Stuetzstellen x_i */
     double[] x;

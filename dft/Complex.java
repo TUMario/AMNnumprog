@@ -30,8 +30,8 @@ public class Complex {
      * @return "this + other"
      */
     public Complex add(Complex other) {
-        // TODO: diese Methode ist zu implementieren
-        return null;
+        return new Complex(this.real+other.real,
+                        this.imaginary+other.imaginary);
     }
 
     /**
@@ -40,8 +40,8 @@ public class Complex {
      * @return "this - other"
      */
     public Complex sub(Complex other) {
-        // TODO: diese Methode ist zu implementieren
-        return null;
+        return new Complex(this.real-other.real,
+                        this.imaginary-other.imaginary);
     }
 
     /**
@@ -50,8 +50,8 @@ public class Complex {
      * @return "this * other"
      */
     public Complex mul(Complex other) {
-        // TODO: diese Methode ist zu implementieren
-        return null;
+        return new Complex(this.real*other.real - this.imaginary*other.imaginary,
+                        this.real*other.imaginary + this.imaginary*other.real);
     }
 
     /**
@@ -123,7 +123,6 @@ public class Complex {
      * Winkel phi.
      */
     public static Complex fromPolar(double r, double phi) {
-        // TODO: diese Methode ist zu implementieren
-        return null;
+        return new Complex(r*Math.cos(phi),r*Math.sin(phi));
     }
 }

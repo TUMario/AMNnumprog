@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @author braeckle
  *
  */
-public class NewtonPolynom implements InterpolationMethod {
+public class NewtonPolynom implements InterpolationMethod { //FERTIG
 
     /** Stuetzstellen xi */
     double[] x;
