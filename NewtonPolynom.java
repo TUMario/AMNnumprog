@@ -171,7 +171,6 @@ public class NewtonPolynom implements InterpolationMethod { //FERTIG
         double retDoub = a[a.length-1];
         for (int i = a.length-2; i >= 0; i--) {
             retDoub = (a[i] + (z - x[i]) * retDoub);
-            /* TODO: diese Methode ist zu implementieren */
         }
         return retDoub;
     }
