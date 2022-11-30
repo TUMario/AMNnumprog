@@ -40,8 +40,11 @@ public class Test {
         for (int i = 0; i < 4; i++)
             v[i] = i + 1;
         Complex[] c = dft.DFT.dft(v);
+        for (int i = 0; i< v.length; i++)
+            System.out.println(v[i]);
         Complex[] v2 = dft.IFFT.ifft(c);
-
+        for (int i = 0; i< v.length; i++)
+            System.out.println(v2[i]);
         for (int i = 0; i < 4; i++) {
             System.out.println(v2[i]);
         }
